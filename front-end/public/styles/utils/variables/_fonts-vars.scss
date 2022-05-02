@@ -1,0 +1,62 @@
+@use "typo-vars" as *;
+
+$font-path: '/fonts/';
+
+@font-face {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  src: url($font-path + $montserrat + '-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $montserrat + ' Light';
+  font-style: normal;
+  font-weight: $font-weight-light;
+  src: url($font-path + $montserrat + '-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $montserrat;
+  font-style: italic;
+  src: url($font-path + $montserrat + '-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $montserrat + ' Medium';
+  font-weight: $font-weight-medium;
+  src: url($font-path + $montserrat + '-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $montserrat + ' Semibold';
+  font-weight: $font-weight-semibold;
+  src: url($font-path + $montserrat + '-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $montserrat + ' Bold';
+  font-weight: $font-weight-bold;
+  src: url($font-path + $montserrat + '-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $courier-prime;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  src: url($font-path + $courier-prime + '-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $courier-prime;
+  font-style: italic;
+  font-weight: $font-weight-normal;
+  src: url($font-path + $courier-prime + '-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $courier-prime + ' Bold';
+  font-weight: $font-weight-bold;
+  src: url($font-path + $courier-prime + '-Bold.ttf') format('truetype');
+}
+
