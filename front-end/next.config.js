@@ -1,17 +1,14 @@
 const path = require('path');
 
 /** @type {import('next').NextConfig} */
+
+
 const nextConfig = {
     reactStrictMode: true,
     sassOptions: {
         includePaths: [path.join(__dirname, 'public/styles')],
     },
     webpack: (config, options) => {
-        // config.output = {
-        //     ...config.output,
-        //     clean: true,
-        // };
-        console.log([path.resolve(__dirname, 'public')]);
         config.resolve.alias = {
             ...config.resolve.alias,
             '@mui/base': '@mui/base/legacy',
@@ -28,19 +25,11 @@ const nextConfig = {
             },
             {
                 test: /\.(eot|ttf|woff|woff2|png|jpe?g|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            publicPath: [path.resolve(__dirname, 'public')],
-                        },
-                    },
-                ],
+                use: 'file-loader',
             },
             {
                 test: /\.svg$/,
-                use: ['@svgr/webpack', 'url-loader'],
+                use: ['@svgr/webpack'],
             },
         );
         return config;
