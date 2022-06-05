@@ -1,0 +1,33 @@
+@use "../utils/variables" as variables;
+
+.navbar-wrapper {
+
+}
+
+.navbar-container {
+  .nav-left-wrapper {
+    width: 70%;
+    //
+    a {
+      font-family: variables.$montserrat + ' Medium';
+      cursor: pointer;
+      color: variables.$gray-800;
+      //text-decoration: none;
+
+      &:active {
+        color: variables.$color-text-link;
+
+      }
+
+      &:hover {
+        color: variables.$color-text-link-hover;
+      }
+    }
+  }
+
+  .nav-right-wrapper {
+    min-width: 25%;
+    max-width: 30%;
+    float: right;
+  }
+}
