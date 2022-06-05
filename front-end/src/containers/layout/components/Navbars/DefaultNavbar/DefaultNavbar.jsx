@@ -1,14 +1,15 @@
 import {AppBar, Container, Link, Stack, Toolbar} from '@mui/material';
 import React from 'react';
-import Logo from '@/assets/images/logo.svg'
-import Image from 'next/image'
+import Logo from '@/assets/images/logo.svg';
+import Image from 'next/image';
+import {NavLinks} from '@/routes/navRoutes';
 
 const DefaultNavbar = ({children}) => {
     return (
         <>
             <AppBar position="static"
                     color={'transparent'}
-                    // elevation={0} //remove box shadow
+                // elevation={0} //remove box shadow
                     className="navbar-wrapper">
                 <Toolbar>
                     <Container disableGutters={true}
@@ -22,11 +23,16 @@ const DefaultNavbar = ({children}) => {
                                 <Stack direction="row"
                                        alignItems="center"
                                        spacing={6}>
-                                    <Image src={Logo} width={120} height={64}/>
-                                    <Link underline={'hover'}>Home</Link>
-                                    <Link underline={'hover'}>About us</Link>
-                                    <Link underline={'hover'}>Blog</Link>
-                                    <Link underline={'hover'}>Contact</Link>
+                                    <Image src={Logo}
+                                           width={120}
+                                           height={64}/>
+                                    {NavLinks.map((item, index) => (
+                                        <Link key={index}
+                                              underline={'hover'}
+                                              href={item.path}>
+                                            {item.name}
+                                        </Link>
+                                    ))}
                                 </Stack>
                             </Container>
                             <Container disableGutters={true}
