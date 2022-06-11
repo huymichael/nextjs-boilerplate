@@ -1,0 +1,22 @@
+@use "../utils/variables" as variables;
+
+.page-wrapper {
+  background-color: variables.$color-bg-canvas;
+}
+
+.page-header {
+  header {
+    min-height: variables.$header-min-height;
+    max-height: variables.$header-max-height;
+  }
+}
+
+.page-content {
+  padding-top: 2rem;
+  height: calc(100vh - variables.$header-max-height);
+}
+
+.page-footer {
+  padding: 2rem 0 4rem;
+  border-top: 1px solid variables.$color-break-line;
+}

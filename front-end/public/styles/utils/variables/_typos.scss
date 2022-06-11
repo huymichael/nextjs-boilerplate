@@ -1,7 +1,7 @@
 // Font stacks
 $montserrat: 'Montserrat';
 $courier-prime: 'CourierPrime';
-$body-font: $montserrat, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !default;
+$body-font: $courier-prime, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !default;
 
 // Font weights
 $font-weight-normal: 400 !default;
@@ -18,13 +18,13 @@ $lh-default: 1.5 !default;
 // The base body size
 $global-font-size: 62.5% !default;
 $body-font-size: 1.6rem !default;
+$body-font-mobile-size: 1.4rem !default;
 $body-line-height: $lh-default !default;
 
-
-//Heading size - desktop
-$h1-size: 6rem !default;
-$h2-size: 3.75rem !default;
-$h3-size: 3rem !default;
-$h4-size: 2.125rem !default;
-$h5-size: 1.5rem !default;
-$h6-size: 1.25rem !default;
+//Heading size  - Scale 1.333
+$h1-size: 5.6rem !default;
+$h2-size: 4.2rem !default;
+$h3-size: 3.2rem !default;
+$h4-size: 2.4rem !default;
+$h5-size: 1.8rem !default;
+$h6-size: 1.3rem !default;

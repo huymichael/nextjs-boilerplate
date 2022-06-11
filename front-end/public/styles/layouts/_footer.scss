@@ -1,0 +1,15 @@
+@use "../utils/variables" as variables;
+
+footer {
+  .footer-container {
+    .sub-content {
+      padding: 2.75rem 0;
+      border-bottom: 1px solid variables.$color-break-line;
+
+      &:last-child {
+        padding-top: 2rem;
+        border: none;
+      }
+    }
+  }
+}

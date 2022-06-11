@@ -1,0 +1,32 @@
+@use "color-palette" as palette;
+
+//BACKGROUND
+$color-bg-canvas: palette.$gray-50;
+$color-bg-canvas-inverse: palette.$gray-800;
+//$color-bg-primary: $color-neu-N0;
+//$color-bg-secondary: $color-neu-N20;
+//$color-bg-tertiary: $color-neu-N30;
+//$color-bg-info: $color-blue-B100;
+//$color-bg-info-inverse:$color-blue-B500;
+//$color-bg-danger: $color-red-R100;
+//$color-bg-danger-inverse: $color-red-R500;
+//$color-bg-success:  $color-green-G100;
+//$color-bg-success-inverse:$color-green-G500;
+//$color-bg-warning: $color-yellow-Y100;
+//$color-bg-warning-inverse: $color-yellow-Y500;
+
+//TEXT COLOR
+$color-text-primary: palette.$black;
+$color-text-secondary: palette.$gray-800;
+$color-text-placeholder: palette.$gray-600;
+//$color-text-disabled: $color-neu-N200;
+$color-text-link: palette.$secondary;
+//$color-text-link-decoration: $color-blue-B400;
+$color-text-link-hover: palette.$secondary-dark;
+$color-text-danger: palette.$error;
+$color-text-success: palette.$success;
+$color-text-warning: palette.$warning;
+
+
+//LINE
+$color-break-line: palette.$gray-200;
