@@ -16,7 +16,7 @@
   height: calc(100vh - variables.$header-max-height);
 }
 
-footer {
+.page-footer {
+  padding: 2rem 0 4rem;
   border-top: 1px solid variables.$color-break-line;
-  padding-top: 2.75rem;
 }

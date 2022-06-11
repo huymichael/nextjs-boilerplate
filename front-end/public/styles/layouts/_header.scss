@@ -7,7 +7,9 @@
 .navbar-container {
   .nav-left-wrapper {
     width: 70%;
-    //
+    .brand-logo{
+      cursor: pointer;
+    }
     a {
       font-family: variables.$montserrat + ' Medium';
       cursor: pointer;
@@ -28,6 +30,5 @@
   .nav-right-wrapper {
     min-width: 25%;
     max-width: 30%;
-    float: right;
   }
 }
